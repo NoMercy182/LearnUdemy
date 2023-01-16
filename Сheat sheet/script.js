@@ -24,7 +24,7 @@ switch (switchNumber) {
     console.log(`error`);
 }
 
-// Логические операторы ----------------------------------------
+// Логические операторы --------------------------------------------------------------
 
 const hamburger = 3;
 const fries = 0;
@@ -51,3 +51,18 @@ console.log(null || ''); // ''
 // 5 сущностей FALSE в js:
 
 const arrFalse = [0, '', null, undefined, NaN];
+
+// Cicles --------------------------------------------------------------
+
+first: for (let i = 0; i < 3; i++) {
+  console.log(`First level, this is i = ${i}`);
+  for (let j = 0; j < 3; j++) {
+    console.log(`Second level, this is j = ${j}`);
+    for (let k = 0; k < 3; k++) {
+      if (k === 1) {
+        continue first;
+      }
+      console.log(`Third level, this is k = ${k}`);
+    }
+  }
+}
