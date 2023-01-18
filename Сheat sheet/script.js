@@ -120,3 +120,18 @@ console.log(doNothing() === undefined);
 
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number
 // методы чисел
+
+// Calback --------------------------------------------------------------------
+
+function learnJS(lang, callback) {
+  console.log(`I am learn: ${lang}`);
+  callback();
+}
+
+learnJS('JS', () => console.log('111'));
+
+const funcDone = () => {
+  console.log(222);
+};
+
+learnJS('Js', funcDone);
