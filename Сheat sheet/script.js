@@ -66,3 +66,52 @@ first: for (let i = 0; i < 3; i++) {
     }
   }
 }
+
+// Functions --------------------------------------------------------------
+
+function funcDec() {
+  console.log('funcDec');
+}
+
+funcDec();
+
+const funcExp = function () {
+  console.log('funcExp');
+};
+
+funcExp();
+
+const funcArroy = () => {
+  console.log('funcArroy');
+};
+
+funcArroy();
+
+const convert = (amount, curr) => {
+  return (amount * curr);
+};
+
+const USD_CURR = 2.5;
+const EURO_CURR = 2.9;
+
+const convertUSD = convert(500, USD_CURR);
+const convertEURO = convert(500, EURO_CURR);
+
+console.log(convertUSD);
+console.log(convertEURO);
+
+function test() {
+  for (let i = 0; i < 5; i++) {
+    console.log(i);
+    if (i === 3) {
+      return;
+    }
+    console.log('done');
+  }
+}
+
+function doNothing() { }
+console.log(doNothing() === undefined);
+
+// Методы и свойства строк и чисел --------------------------------------
+
