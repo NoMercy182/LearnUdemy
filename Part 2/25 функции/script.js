@@ -82,7 +82,7 @@ const getMathResult = (a, b) => {
     for (let i = 1; i <= b; i++) {
       result += (a * i) + '---';
     }
-    return result.substring(0, result.length -3);
+    return result.substring(0, result.length - 3);
   }
 };
 

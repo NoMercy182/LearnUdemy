@@ -115,3 +115,8 @@ console.log(doNothing() === undefined);
 
 // Методы и свойства строк и чисел --------------------------------------
 
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String
+// методы строк
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number
+// методы чисел
